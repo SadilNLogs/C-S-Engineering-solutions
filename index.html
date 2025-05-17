@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>C&S Engineering Solutions</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f7f9fb;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #1e1e2f;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffd700;
+      text-decoration: none;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #ffd700;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding: 80px 50px;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .hero img {
+      max-width: 350px;
+      border-radius: 20px;
+    }
+
+    .hero-content {
+      max-width: 600px;
+    }
+
+    .hero-content h1 {
+      font-size: 36px;
+    }
+
+    .hero-content h1 span {
+      color: #ffd700;
+    }
+
+    .hero-content p {
+      margin: 20px 0;
+      line-height: 1.6;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: white;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ffd700;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 25px;
+      background-color: #ffd700;
+      color: #000;
+      border-radius: 30px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #e6c200;
+    }
+
+    .section {
+      padding: 60px 50px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #1e1e2f;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      max-width: 280px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      color: #1e1e2f;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .card i {
+      font-size: 40px;
+      color: #ffd700;
+      margin-bottom: 20px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+      }
+      .hero img {
+        max-width: 90%;
+      }
+      .cards {
+        flex-direction: column;
+        gap: 15px;
+      }
+      .card {
+        max-width: 100%;
+      }
+      header {
+        flex-direction: column;
+        padding: 15px 20px;
+      }
+      nav a {
+        margin: 10px 15px 0 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">C&S Engineering</a>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#products">Products</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-img">
+      <img
+        src="https://source.unsplash.com/350x350/?electronics"
+        alt="Electronics"
+      />
+    </div>
+    <div class="hero-content">
+      <h1>Welcome to <span>C&S Engineering</span></h1>
+      <p>
+        Your trusted partner in innovative electronic components and
+        solutions for a smarter future.
+      </p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <a href="#contact" class="btn">Contact Us</a>
+    </div>
+  </section>
+
+  <section class="section" id="products">
+    <h2>Our Products</h2>
+    <div class="cards">
+      <div class="card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX-yfpG82pZPUtS87iynnNSqsUaqJy03mG8w&s"
+          alt="Electronic Component"
+        />
+        <h3>Electronic Components</h3>
+        <p>
+          High-quality chips, resistors, capacitors, and more for your projects
+          and repairs.
+        </p>
+        <a href="#contact" class="btn">Get Quote</a>
+      </div>
+      <div class="card">
+        <img
+          src="https://image.made-in-china.com/202f0j00WwelBdjcwKuQ/Superior-Quality-Factory-Wholesale-Infrared-Cooker-Hob-Single-Burner-Electric-Cooktops-Home-Appliances.webp"
+          alt="Power Supply"
+        />
+        <h3>Power Supplies</h3>
+        <p>
+          Reliable and efficient power supply units for industrial and domestic
+          needs.
+        </p>
+        <a href="#contact" class="btn">Get Quote</a>
+      </div>
+      <div class="card">
+        <img src="https://c8.alamy.com/comp/M5A9W6/electrical-items-and-wire-cutter-on-table-M5A9W6.jpg" alt="Engineering Tools" />
+        <h3>Engineering Tools</h3>
+        <p>Precision tools and kits designed for professionals and hobbyists alike.</p>
+        <a href="#contact" class="btn">Get Quote</a>
+      </div>
+      <div class="card">
+        <img
+          src="https://earth.org/wp-content/uploads/2022/10/Untitled-1024-%C3%97-683px-2022-10-06T091334.826.jpg"
+          alt="Air Cylinder"
+        />
+        <h3>Air Cylinder</h3>
+        <p>High-performance pneumatic air cylinders suitable for automation systems.</p>
+        <a href="pdfs/air-cylinder-specs.pdf" class="btn" target="_blank">View Specs</a>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkn0TdZw5jr0EOj9fdbG3RwmoSzJtpoN8g_Q&s" alt="Solenoid Valve" />
+        <h3>Solenoid Valve</h3>
+        <p>Durable and compact solenoid valves designed for industrial control.</p>
+        <a href="#contact" class="btn">Contact for Quote</a>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIWWhBsubqEHWmD3JSkXmliPP_wHy5rbpVWw&s" alt="FRL Unit" />
+        <h3>FRL Units</h3>
+        <p>Filter-Regulator-Lubricator units ensure clean and efficient air flow.</p>
+        <a href="#contact" class="btn">Contact for Quote</a>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmAMxCPk7aEqC7FWFBd232AWxuxY3xTlU19g&s" alt="PU Tube" />
+        <h3>PU Tubes</h3>
+        <p>Flexible, durable PU tubing ideal for pneumatic connections and systems.</p>
+        <a href="#contact" class="btn">Order Now</a>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG4MY_tPsRTgWcvBlMLwfv1wwOcYxitDbQ8w&s" alt="Fittings" />
+        <h3>Pneumatic Fittings</h3>
+        <p>Wide range of brass and plastic fittings for air and fluid handling needs.</p>
+        <a href="#contact" class="btn">Get Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <i class="fas fa-cogs"></i>
+        <h3>Custom Solutions</h3>
+        <p>
+          We develop and deliver tailor-made engineering solutions for your
+          unique requirements.
+        </p>
+      </div>
+      <div class="card">
+        <i class="fas fa-shipping-fast"></i>
+        <h3>Fast Delivery</h3>
+        <p>
+          We ensure quick and safe delivery across the country with reliable
+          logistics support.
+        </p>
+      </div>
+      <div class="card">
+        <i class="fas fa-headset"></i>
+        <h3>Support & Consultation</h3>
+        <p>
+          Get expert advice and ongoing support for all your electronic needs and
+          projects.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+      <p>
+        C&S Engineering Solutions has been serving the electronics and
+        engineering community with dedication, expertise, and innovation. Our
+        mission is to provide reliable products and smart services tailored to
+        individual and industry-level needs.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+      <p>Email us at: <a href="mailto:info@csengineering.com">info@csengineering.com</a></p>
+      <p>Call us: +94 77 123 4567</p>
+      <p>Visit us at: No. 123, Engineering Lane, Colombo, Sri Lanka</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 C&S Engineering Solutions. All rights reserved.
+  </footer>
+</body>
+</html>
